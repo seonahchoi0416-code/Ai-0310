@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Since 26.04.09 포트폴리오</title>
+    <!---favicon-->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/index.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/static/app/index.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1>나만의 IT 기술 포트폴리오</h1>
+    </header>
+    <hr>
+    <nav>
+        <ul>
+            <li id="travel" im="관광지.jpg"> 🌵이미지 맞추기 🌵</li>
+            <li id="sample" im="샘플이미지.png">🌵 샘플1 🌵</li>
+            <li id="otter" im="수달.webp">🌵 샘플2 🌵</li>
+
+        </ul>
+    </nav>
+    <div id="main_img">
+         
+    </div>
+    <div id="content_container"
+         style="display:none;padding:1rem;position:fixed;left:0;
+         top:0;width:100vw;height:100vh;background:rgba(77, 168, 204,0.5)">
+        <span id="close" style="font-size:2vw;position:fixed;top:2.8vh;right:1vw">❎</span>>
+           <div class="content_ui" style="width:97vw;background:white">
+           <feildset style="padding:1rem;">
+               <legend>다중분류 이미지 맞추기 (비행기,자동차,새,고양이,사슴,강아지,개구리,말,배,트럭)</legend>
+               <label>업로드 이미지 :<input id="file_input" type="file"> </label>
+           </feildset>
+           <div class="train_img">
+                <img src="/static/images/conv_img/conv_graph.png" />
+                <img src="/static/images/conv_img/conv_heatmap.png"/>
+                <img src="/static/images/conv_img/conv_puzzle.png"/>
+                <img src="/static/images/conv_img/conv_f1.png"/>
+           </div>
+      <hr style="margin:1rem">
+      <button id="send_service" info="" style="width:97vw;height:2rem">서버로 전송하기</button>
+      <div id="result" style="overflow:auto">
+
+      </div>
+    </div>
+
+</body>
+</html>
